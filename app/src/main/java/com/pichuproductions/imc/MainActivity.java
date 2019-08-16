@@ -38,11 +38,35 @@ public class MainActivity extends AppCompatActivity {
 
                 Double calculo = p1/(a1*a1);
 
-                String resultadoFinal = String.valueOf(calculo);
+                if (calculo < 18.5){
 
-                TextView resultado = (TextView) findViewById(R.id.resultado);
+                    String resultadoFinal = String.valueOf(calculo);
 
-                resultado.setText(resultadoFinal);
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n |Abaixo do peso|");
+
+                }
+
+                if (calculo >= 18.6 && calculo <=24.9){
+
+                    String resultadoFinal = String.valueOf(calculo);
+
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n |Peso ideal|");
+
+                }
+
+                if (calculo > 25){
+
+                    String resultadoFinal = String.valueOf(calculo);
+
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n |Acima do peso|");
+
+                }
 
             }
         });

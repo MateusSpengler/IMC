@@ -46,7 +46,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginTop="10dp"/>
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
 
     <Button
         android:id="@+id/btn_credito"
@@ -61,7 +62,7 @@
         android:shadowRadius="5"
         android:onClick="openActivity"
         android:layout_gravity="center"
-        android:layout_marginTop="375dp"
+        android:layout_marginTop="360dp"
         />
 
 </LinearLayout>
