@@ -18,6 +18,8 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        setTitle("Índice de massa corporal (IMC)");
+
         Button botao = (Button) findViewById(R.id.btn_calcular);
 
         botao.setOnClickListener(new View.OnClickListener() {
