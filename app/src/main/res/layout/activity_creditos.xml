@@ -4,13 +4,16 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CreditosActivity">
+    tools:context=".CreditosActivity"
+    android:orientation="vertical">
 
     <TextView
-        android:text="Esse trabalho foi criado com a finalidade, para calcular o indíce de massa corporal. "
         android:layout_width="270dp"
         android:layout_height="wrap_content"
-        android:textAlignment="center"
-        android:gravity="center"/>
+        android:layout_gravity="center"
+        android:text="Esse trabalho foi criado com a finalidade de calcular o índicece de massa corporal. "
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textAlignment="center" />
 
 </LinearLayout>
