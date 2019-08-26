@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.text.NumberFormat;
@@ -29,6 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
                 EditText peso = findViewById(R.id.text_peso);
                 EditText altura = findViewById(R.id.text_altura);
+                ImageView im1 = findViewById(R.id.imageView);
 
                 String txt_peso = peso.getText().toString();
                 String txt_altura = altura.getText().toString();
@@ -45,6 +47,8 @@ public class MainActivity extends AppCompatActivity {
                     TextView resultado = (TextView) findViewById(R.id.resultado);
 
                     resultado.setText(resultadoFinal+" \n\n |Abaixo do peso|");
+
+                    im1.setVisibility(View.VISIBLE);
 
                 }
 
