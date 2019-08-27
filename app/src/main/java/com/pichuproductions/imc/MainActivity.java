@@ -30,7 +30,13 @@ public class MainActivity extends AppCompatActivity {
 
                 EditText peso = findViewById(R.id.text_peso);
                 EditText altura = findViewById(R.id.text_altura);
-                ImageView im1 = findViewById(R.id.imageView);
+                ImageView im1 = findViewById(R.id.imageView1);
+                ImageView im2 = findViewById(R.id.imageView2);
+                ImageView im3 = findViewById(R.id.imageView3);
+                ImageView im4 = findViewById(R.id.imageView4);
+                ImageView im5 = findViewById(R.id.imageView5);
+                ImageView im6 = findViewById(R.id.imageView6);
+
 
                 String txt_peso = peso.getText().toString();
                 String txt_altura = altura.getText().toString();
@@ -46,9 +52,15 @@ public class MainActivity extends AppCompatActivity {
 
                     TextView resultado = (TextView) findViewById(R.id.resultado);
 
-                    resultado.setText(resultadoFinal+" \n\n |Abaixo do peso|");
+                    resultado.setText(resultadoFinal+" \n\n Abaixo do peso \n\n");
 
                     im1.setVisibility(View.VISIBLE);
+                    im2.setVisibility(View.INVISIBLE);
+                    im3.setVisibility(View.INVISIBLE);
+                    im4.setVisibility(View.INVISIBLE);
+                    im5.setVisibility(View.INVISIBLE);
+                    im6.setVisibility(View.INVISIBLE);
+
 
                 }
 
@@ -58,21 +70,88 @@ public class MainActivity extends AppCompatActivity {
 
                     TextView resultado = (TextView) findViewById(R.id.resultado);
 
-                    resultado.setText(resultadoFinal+" \n\n |Peso ideal|");
+                    resultado.setText(resultadoFinal+" \n\n Peso ideal \n\n");
+
+                    im2.setVisibility(View.VISIBLE);
+                    im1.setVisibility(View.INVISIBLE);
+                    im3.setVisibility(View.INVISIBLE);
+                    im4.setVisibility(View.INVISIBLE);
+                    im5.setVisibility(View.INVISIBLE);
+                    im6.setVisibility(View.INVISIBLE);
 
                 }
 
-                if (calculo > 25){
+                if (calculo >= 25 && calculo <29.9){
 
                     String resultadoFinal = String.valueOf(calculo);
 
                     TextView resultado = (TextView) findViewById(R.id.resultado);
 
-                    resultado.setText(resultadoFinal+" \n\n |Acima do peso|");
+                    resultado.setText(resultadoFinal+" \n\n Acima do peso \n\n");
+
+                    im3.setVisibility(View.VISIBLE);
+                    im1.setVisibility(View.INVISIBLE);
+                    im2.setVisibility(View.INVISIBLE);
+                    im4.setVisibility(View.INVISIBLE);
+                    im5.setVisibility(View.INVISIBLE);
+                    im6.setVisibility(View.INVISIBLE);
+
+                }
+
+                if (calculo >= 30 && calculo <=34.9 ){
+
+                    String resultadoFinal = String.valueOf(calculo);
+
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n Obesidade I \n\n");
+
+                    im4.setVisibility(View.VISIBLE);
+                    im1.setVisibility(View.INVISIBLE);
+                    im2.setVisibility(View.INVISIBLE);
+                    im3.setVisibility(View.INVISIBLE);
+                    im5.setVisibility(View.INVISIBLE);
+                    im6.setVisibility(View.INVISIBLE);
+
+                }
+
+                if (calculo >= 35 && calculo <=39.9 ){
+
+                    String resultadoFinal = String.valueOf(calculo);
+
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n Obesidade II \n\n");
+
+                    im5.setVisibility(View.VISIBLE);
+                    im1.setVisibility(View.INVISIBLE);
+                    im2.setVisibility(View.INVISIBLE);
+                    im3.setVisibility(View.INVISIBLE);
+                    im4.setVisibility(View.INVISIBLE);
+                    im6.setVisibility(View.INVISIBLE);
+
+                }
+
+                if (calculo >= 40 ){
+
+                    String resultadoFinal = String.valueOf(calculo);
+
+                    TextView resultado = (TextView) findViewById(R.id.resultado);
+
+                    resultado.setText(resultadoFinal+" \n\n Obesidade III \n\n");
+
+                    im6.setVisibility(View.VISIBLE);
+                    im1.setVisibility(View.INVISIBLE);
+                    im2.setVisibility(View.INVISIBLE);
+                    im3.setVisibility(View.INVISIBLE);
+                    im4.setVisibility(View.INVISIBLE);
+                    im5.setVisibility(View.INVISIBLE);
 
                 }
 
             }
+
+
         });
 
     }
