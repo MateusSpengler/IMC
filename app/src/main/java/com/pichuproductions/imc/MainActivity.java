@@ -46,7 +46,7 @@ public class MainActivity extends AppCompatActivity {
 
                 Double calculo = p1/(a1*a1);
 
-                if (calculo < 18.5){
+                if (calculo <= 18.5){
 
                     String resultadoFinal = String.valueOf(calculo);
 

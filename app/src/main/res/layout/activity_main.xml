@@ -63,7 +63,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/abaixopeso"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <ImageView
         android:id="@+id/imageView2"
@@ -73,7 +73,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/normal"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <ImageView
         android:id="@+id/imageView3"
@@ -83,7 +83,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/sobrepeso"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <ImageView
         android:id="@+id/imageView4"
@@ -93,7 +93,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/obesidade1"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <ImageView
         android:id="@+id/imageView5"
@@ -103,7 +103,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/obesidade2"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <ImageView
         android:id="@+id/imageView6"
@@ -113,7 +113,7 @@
         android:layout_centerHorizontal="true"
         android:visibility="invisible"
         app:srcCompat="@drawable/obesidade3"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="30dp"/>
 
     <Button
         android:id="@+id/btn_credito"
@@ -131,7 +131,7 @@
         android:textSize="20dp"
         android:onClick="openActivity"
         android:layout_alignParentBottom="true"
-        android:layout_marginBottom="40dp"/>
+        android:layout_marginBottom="60dp"/>
 
 
 </RelativeLayout>
