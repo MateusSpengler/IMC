@@ -46,6 +46,13 @@ public class MainActivity extends AppCompatActivity {
 
                 Double calculo = p1/(a1*a1);
 
+                im1.setVisibility(View.INVISIBLE);
+                im2.setVisibility(View.INVISIBLE);
+                im3.setVisibility(View.INVISIBLE);
+                im4.setVisibility(View.INVISIBLE);
+                im5.setVisibility(View.INVISIBLE);
+                im6.setVisibility(View.INVISIBLE);
+
                 if (calculo <= 18.5){
 
                     String resultadoFinal = String.valueOf(calculo);
@@ -55,12 +62,6 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Abaixo do peso \n\n");
 
                     im1.setVisibility(View.VISIBLE);
-                    im2.setVisibility(View.INVISIBLE);
-                    im3.setVisibility(View.INVISIBLE);
-                    im4.setVisibility(View.INVISIBLE);
-                    im5.setVisibility(View.INVISIBLE);
-                    im6.setVisibility(View.INVISIBLE);
-
 
                 }
 
@@ -73,11 +74,6 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Peso ideal \n\n");
 
                     im2.setVisibility(View.VISIBLE);
-                    im1.setVisibility(View.INVISIBLE);
-                    im3.setVisibility(View.INVISIBLE);
-                    im4.setVisibility(View.INVISIBLE);
-                    im5.setVisibility(View.INVISIBLE);
-                    im6.setVisibility(View.INVISIBLE);
 
                 }
 
@@ -90,11 +86,6 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Acima do peso \n\n");
 
                     im3.setVisibility(View.VISIBLE);
-                    im1.setVisibility(View.INVISIBLE);
-                    im2.setVisibility(View.INVISIBLE);
-                    im4.setVisibility(View.INVISIBLE);
-                    im5.setVisibility(View.INVISIBLE);
-                    im6.setVisibility(View.INVISIBLE);
 
                 }
 
@@ -107,11 +98,6 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Obesidade I \n\n");
 
                     im4.setVisibility(View.VISIBLE);
-                    im1.setVisibility(View.INVISIBLE);
-                    im2.setVisibility(View.INVISIBLE);
-                    im3.setVisibility(View.INVISIBLE);
-                    im5.setVisibility(View.INVISIBLE);
-                    im6.setVisibility(View.INVISIBLE);
 
                 }
 
@@ -124,11 +110,7 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Obesidade II \n\n");
 
                     im5.setVisibility(View.VISIBLE);
-                    im1.setVisibility(View.INVISIBLE);
-                    im2.setVisibility(View.INVISIBLE);
-                    im3.setVisibility(View.INVISIBLE);
-                    im4.setVisibility(View.INVISIBLE);
-                    im6.setVisibility(View.INVISIBLE);
+
 
                 }
 
@@ -141,11 +123,6 @@ public class MainActivity extends AppCompatActivity {
                     resultado.setText(resultadoFinal+" \n\n Obesidade III \n\n");
 
                     im6.setVisibility(View.VISIBLE);
-                    im1.setVisibility(View.INVISIBLE);
-                    im2.setVisibility(View.INVISIBLE);
-                    im3.setVisibility(View.INVISIBLE);
-                    im4.setVisibility(View.INVISIBLE);
-                    im5.setVisibility(View.INVISIBLE);
 
                 }
 
